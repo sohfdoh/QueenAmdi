@@ -23,14 +23,14 @@ const fs = require('fs');
 const { writeFile } = require('fs/promises');
 const Lang = Language.getString('botCTRL');
 
-AMDI({ cmd: "restart", desc: "Restart the bot", type: "profile", react: "🔃" }, (async (amdiWA) => {
+AMDI({ cmd: "restart", desc: "Restart the bot by dileepa", type: "profile", react: "🔃" }, (async (amdiWA) => {
     let { reply, restart } = amdiWA.msgLayout
 
     await reply('*Restarting...*');
     await restart();
 }));
 
-AMDI({ cmd: "stop", desc: "Stop the bot", type: "profile", react: "📴" }, (async (amdiWA) => {
+AMDI({ cmd: "stop", desc: "Stop the bot by dileepa", type: "profile", react: "📴" }, (async (amdiWA) => {
     let { reply } = amdiWA.msgLayout
 
     await reply('*Bot is shutting down...*\n\n_(You have to manually turn on the bot!)_');
@@ -117,7 +117,7 @@ AMDI({ cmd: "reset", desc: Lang.resetDESC, type: "profile", react: "🚮" }, (as
 
             case 'connectionDB': 
                 await reply(Lang.resetted.format(input), "✔️");
-                await reply('Bot disconnected!', "❌")
+                await reply('Bot disconnected! bro ', "❌")
                 await resetconnectionDB();
             break;
             
@@ -145,7 +145,7 @@ AMDI({ cmd: "reset", desc: Lang.resetDESC, type: "profile", react: "🚮" }, (as
                 await resetSettingsDB();
                 await inputSettings('WORK_TYPE', 'private');
                 await inputSettings('PREFIX', '.');
-                await inputSettings('MODERATOR', 'no moderators added')
+                await inputSettings('MODERATOR', 'no moderators added by dileepa')
                 await reply(Lang.resetted.format(input), "✔️");
             break;
             
@@ -185,7 +185,7 @@ AMDI({ cmd: "rate", desc: Lang.rateDESC, type: "primary", react: "✨" }, (async
 
     if (!input) {
         const botname = await getMiscData('BOTNAME');
-        let BOTNAME = !botname.data ? 'Queen Amdi' : botname.data
+        let BOTNAME = !botname.data ? 'DILEEPA' : botname.data
 
         var listInfo = {}
         listInfo.title = Lang.ratesTitle.format(BOTNAME)
@@ -213,5 +213,5 @@ AMDI({ cmd: "clear", desc: Lang.clearDESC, type: "profile", react: "🚮" }, (as
         delete: true,
         lastMessages: [{ key: lastMsgData.key, messageTimestamp: lastMsgData.messageTimestamp }]
     }, amdiWA.clientJID);
-    return reply("🚮 Chat Cleared!");
+    return reply("🚮 Chat Cleared! BY DILEEPA");
 }));
