@@ -32,7 +32,7 @@ const Lang = Language.getString('amdiMenu');
  * @cmdTypes primary, download, logo, profile, admin
 */
 
-AMDI({ cmd: ["panel", "list", "menu"], desc: "Queen Amdi Main Menu", type: "primary", react: "📂", cmdHideInMenu: true }, (async (amdiWA) => {
+AMDI({ cmd: ["panel", "list", "menu"], desc: "DILEEPA TECH MD Main Menu", type: "primary", react: "📂", cmdHideInMenu: true }, (async (amdiWA) => {
     let { prefix, sendAudioMsg, sendListMsg, msgDevice, sendername } = amdiWA.msgLayout;
    
     const audioURL = amdiVoice
@@ -40,7 +40,7 @@ AMDI({ cmd: ["panel", "list", "menu"], desc: "Queen Amdi Main Menu", type: "prim
     let mimeType = msgDevice == 'ios' ? 'audio/mp4' : 'audio/ogg; codecs=opus'
     await sendAudioMsg({ url: audioURL }, {mimetype: mimeType, ptt: pttStatus});
     const PANEL_HEADER = await getSettings('PANEL_HEADER');
-    let text = !PANEL_HEADER.input || PANEL_HEADER.input == 'default' ? `\n*Hello!* ${sendername}` + Lang.panelText : PANEL_HEADER.input.keywords();
+    let text = !PANEL_HEADER.input || PANEL_HEADER.input == 'default' ? `\n*Hello!* ${sendername} im dileepa` + Lang.panelText : PANEL_HEADER.input.keywords();
 
     var listInfo = {}
     listInfo.title = Lang.panelTitle
