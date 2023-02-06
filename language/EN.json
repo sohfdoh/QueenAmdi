@@ -19,7 +19,7 @@
             "ownerCMDonly": "*⛔ This is an owner command!*",
             "cmdBlockByGrpDesc": "❌ *This command blocked for this group!*",
             "defaultWK": "⚒️ *Work Type setted as* ```private```.\n\nUse .settings to change the work type.",
-            "amdiAIChat": "```🤖 Queen Amdi AI chat enabled!💃🏻♥️```",
+            "amdiAIChat": "```🤖 Queen Amdi AI chat enabled! by dileepa💃🏻♥️```",
             "autorejectcall": "```📵 This user enabled auto call rejection!```",
             "autoINBOBLOCK": "⚠️ *This user enabled auto inbox blocker!*",
             "antiFAKEmsg": "*fake WhatsApp numbers are not allowed here!*",
@@ -30,7 +30,7 @@
             "connDONE": "```Queen Amdi bot has been successfully activated! ✅```\n\n_Please do not try commands here. This is your bot logs chat._\n\n*Thank you for using Queen Amdi 💌*"
         },
         "amdiMenu": {
-            "panelTitle": "📋 QUEEN AMDI COMMAND LIST 💃🏻♥️",
+            "panelTitle": "📋 dileepa tech COMMAND LIST 💃🏻♥️",
             "panelText": "\n\n📚 Queen Amdi Commands are classified into 5 categories :\n\n```01.Primary Commands - All main commands.(Any user allowed)\n\n02.Download Commands - Media downloading commands.\n\n03.Logo Commands - Logo making commands.\n\n04.Admin Commands - Groups related commands.(Only group admins allowed)\n\n05.Profile Commands - Bot settings and bot WhatsApp profile related commands.(Only Bot owner and VIP users allowed)```\n\n*Please choose a command category and get the command list.*",
             "command": "*Command :* ",
             "desc": "*Description :* ",
@@ -301,6 +301,7 @@
             "memUsage": "📟 *Memory usage:* ",
             "ping": "📍 *Ping:* ",
             "upTime": "⏱️ *Bot running time:* "
+            "down": "amisha mathak wenawa appa:"
         },
         "tags": {
             "tagallDESC": "Tag all members in the group.",
